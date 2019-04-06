@@ -38,7 +38,7 @@ class TableViewTest: XCTestCase {
         let tableView = UITableView()
         let indexPath = IndexPath(row: 0, section: 0)
         //important way to create mock object need to remember
-        let mockObj = MockTableViewDataSourceDelegate()
+        let mockObj = MockViewController()
         tableViewDatSourceDelegate.delegate = mockObj
         
         tableViewDatSourceDelegate.tableView(tableView, didSelectRowAt: indexPath)
